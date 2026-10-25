@@ -14,6 +14,10 @@ A skill for **terminal AI agents** (AI coding agents / agentic CLIs such as Clau
 - **Quiz log** (`<Material>_Quiz-Log.md`) with your weak spots, so the next session starts exactly there.
 - **Automatic conversion** of your materials to Markdown (`to_md.sh`), including detection of scanned PDFs.
 
+## Example
+
+See [`examples/example-session.md`](examples/example-session.md) for a shortened example session: questions, grading, a hint, follow-ups, the wrap-up and the quiz log it writes.
+
 ## How it works
 
 1. **Convert:** all files in your folder are converted to `.md` with `markitdown` (fallback: `pandoc` for Word files). For scanned pages, the AI looks at rendered page images directly or runs OCR.
