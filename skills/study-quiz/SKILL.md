@@ -12,6 +12,8 @@ The goal is not to tick off facts, but to find out **whether they understood it*
 
 Argument (optional): path to a file or folder. If missing, ask for it (or use files the user sends in the chat).
 
+**Running in Claude.ai or Claude Desktop** (files uploaded to the chat instead of a local folder): read the uploaded files directly – Claude can read PDFs itself, so `to_md.sh` is optional. Write every file you create (the quiz log) to the outputs folder so the user can download it. Install missing Python packages with `pip` when needed. If a system program can't be installed there, say so briefly and use the fallback described in the step concerned. Files don't persist between chats: at the end, offer the quiz log as a download and ask the user to upload it again next time so you can start with the weak spots.
+
 ## Core principles (always apply)
 
 1. **Only ONE question per message.** Then wait. No lists of questions, no multiple-choice menus (no multiple-choice question tool while quizzing – the only exception is the language question at the very start) – the user should answer freely, like in the exam.
