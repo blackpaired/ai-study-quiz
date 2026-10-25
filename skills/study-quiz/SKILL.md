@@ -12,7 +12,7 @@ The goal is not to tick off facts, but to find out **whether they understood it*
 
 Argument (optional): path to a file or folder. If missing, ask for it (or use files the user sends in the chat).
 
-**Running in Claude.ai or Claude Desktop** (files uploaded to the chat instead of a local folder): read the uploaded files directly – Claude can read PDFs itself, so `to_md.sh` is optional. Write every file you create (the quiz log) to the outputs folder so the user can download it. Install missing Python packages with `pip` when needed. If a system program can't be installed there, say so briefly and use the fallback described in the step concerned. Files don't persist between chats: at the end, offer the quiz log as a download and ask the user to upload it again next time so you can start with the weak spots.
+**Running in a chat app** (files uploaded to the chat instead of a local folder): read the uploaded files directly – if you can read PDFs yourself, `to_md.sh` is optional. Write every file you create (the quiz log) to the outputs folder so the user can download it. Install missing Python packages with `pip` when needed. If a system program can't be installed there, say so briefly and use the fallback described in the step concerned. Files don't persist between chats: at the end, offer the quiz log as a download and ask the user to upload it again next time so you can start with the weak spots.
 
 ## Core principles (always apply)
 

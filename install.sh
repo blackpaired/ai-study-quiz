@@ -2,7 +2,7 @@
 # Installs the study-quiz skill for your terminal AI agent.
 # Usage: open a terminal in this folder and run
 #   bash install.sh [skills-folder]
-# Default: ~/.claude/skills (used by Claude Code and read by some other tools).
+# Default: ~/.claude/skills (a skills folder several AI tools read).
 # Pass the folder your AI tool loads skills from to install somewhere else.
 set -euo pipefail
 here="$(cd "$(dirname "$0")" && pwd)"

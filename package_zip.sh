@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Builds dist/study-quiz.zip for uploading in Claude.ai / Claude Desktop (Customize > Skills > Upload a skill).
-# Claude.ai allows at most 200 characters in the description, so the ZIP gets this short one;
-# the full SKILL.md description stays for Claude Code and other agents.
+# Builds dist/study-quiz.zip for AI apps that let you upload skills as a ZIP file.
+# Some apps allow at most 200 characters in the skill description, so the ZIP gets this short one;
+# the full SKILL.md description stays in the repo.
 set -euo pipefail
 here="$(cd "$(dirname "$0")" && pwd)"
 short="Quizzes you on your lecture notes like an oral examiner: one question at a time, detailed follow-ups, honest grading against your notes. Use for quiz me or exam practice."

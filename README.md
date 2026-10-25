@@ -41,7 +41,7 @@ cd ai-study-quiz
 bash install.sh
 ```
 
-By default the script copies the skill to `~/.claude/skills/study-quiz/`. Claude Code and some other tools read skills from there (`SKILL.md` is an open format used by several AI agents). If your AI tool loads skills from a different folder, pass it:
+By default the script copies the skill to `~/.claude/skills/study-quiz/`, a folder several AI tools read skills from (`SKILL.md` is an open format used by many AI agents). If your AI tool loads skills from a different folder, pass it:
 
 ```bash
 bash install.sh ~/.my-ai-tool/skills
@@ -61,18 +61,18 @@ Then restart your AI agent.
 
 **Tool without skill support?** It still works: tell the AI *"follow the instructions in `<skills-folder>/study-quiz/SKILL.md` for ~/Documents/Physiology/"*.
 
-## Use in Claude.ai or Claude Desktop
+## Use in AI chat apps
 
-Skills also work in the Claude apps (all plans, code execution must be on):
+Some AI chat apps (web or desktop) let you upload skills in the `SKILL.md` format as a ZIP file:
 
 1. Download **`study-quiz.zip`** from the [latest release](https://github.com/blackpaired/ai-study-quiz/releases/latest).
-2. In Claude, go to **Customize → Skills** ([claude.ai/customize/skills](https://claude.ai/customize/skills)), click **+**, then **Create skill → Upload a skill**, and choose the ZIP.
-3. Make sure **Settings → Capabilities → Create and edit files** is turned on.
+2. Upload it in your app's skill settings.
+3. Make sure the app lets the AI run code and create files.
 4. Upload your lecture notes in a chat and ask, e.g., *"quiz me on these notes"*.
 
 The quiz log can't be saved between chats there: download it at the end and upload it again next time, so the quiz starts with your weak spots.
 
-Claude.ai allows only 200 characters for a skill description, so the ZIP has a shorter one. To build the ZIP yourself: `bash package_for_claude_ai.sh` (creates `dist/study-quiz.zip`).
+Some apps allow only 200 characters for a skill description, so the ZIP has a shorter one. To build the ZIP yourself: `bash package_zip.sh` (creates `dist/study-quiz.zip`).
 
 ## Usage
 
