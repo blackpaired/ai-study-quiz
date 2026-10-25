@@ -67,7 +67,7 @@ Put the materials for one exam into one folder, then in your AI agent type:
 
 Plain language works too: *"quiz me on ~/Documents/Physiology"*, or *"quiz me, but only on chapter 3"*.
 
-The quiz runs in the language of your materials and of your messages.
+The quiz runs in the language you write in. If your materials are in a different language, it asks you at the start which language you want.
 
 ### Commands during the quiz
 
