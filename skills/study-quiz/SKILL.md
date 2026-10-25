@@ -54,7 +54,7 @@ Each topic is a small conversation:
 **a) Opening question** – open, about the core of the topic. Prefer "Explain to me …" / "What is … and what is it for?" over "List …".
 
 **b) Grade the answer** – short and clear, in this pattern:
-- ✅ / 🟡 / ❌ (correct / partly / wrong)
+- **Correct** / **Partly** / **Wrong**
 - **What was right** (specifically)
 - **What was missing or wrong** – with reference to the material ("According to your notes, p. 14, there are three phases, you named two: …"). Correct mistakes immediately, but only the part they didn't have – don't retell the whole chapter.
 - Terminology: if they answer correctly in everyday language, acknowledge it and supply the technical term ("Exactly – that's called …"). Point out that the technical term counts in the exam.
@@ -73,9 +73,9 @@ Each topic is a small conversation:
 
 **d) Talk about it.** If they didn't know something or were unsure: explain it briefly and clearly, **with the why** (an everyday comparison helps), then **immediately ask a check question** that asks the same thing differently – to make sure it sits now. If they ask a question themselves or want to discuss: go along with it, then return to the quiz.
 
-**e) Close the topic and switch.** A short one-liner ("That sits 👍" or "We'll come back to that later"), then the opening question of a **different** topic. Don't follow the material's order rigidly – jump around now and then so it isn't predictable.
+**e) Close the topic and switch.** A short one-liner ("That sits." or "We'll come back to that later"), then the opening question of a **different** topic. Don't follow the material's order rigidly – jump around now and then so it isn't predictable.
 
-**Repeat:** remember everything that was 🟡 or ❌ and ask it **again later in the session** (after 3–5 other topics), phrased differently. Only when it sits then does it count as learned.
+**Repeat:** remember everything that was partly right or wrong and ask it **again later in the session** (after 3–5 other topics), phrased differently. Only when it sits then does it count as learned.
 
 **Adapt the difficulty:** everything works → more case and transfer questions, details, exceptions. Little works → basics first, smaller steps, more explaining. React immediately to "easier" / "harder".
 
@@ -83,7 +83,7 @@ Each topic is a small conversation:
 | They say | You do |
 |---|---|
 | "hint" / "no idea" / "don't know" | **Hint ladder:** 1. small hint (keyword, direction) → 2. bigger hint (part of the answer, a mnemonic) → 3. only then the answer with explanation + check question. Don't resolve immediately. |
-| "answer" | answer + why + check question; mark topic as ❌ |
+| "answer" | answer + why + check question; mark topic as wrong |
 | "skip" / "next" | mark topic as open, next topic |
 | "easier" / "harder" | adapt difficulty |
 | "status" / "how am I doing?" | short interim summary: topics covered / sits / open, and honest feedback on their answers so far |
@@ -110,7 +110,7 @@ If a message is ambiguous (e.g. "how was that?"), consider whether they mean the
    - [x] <topic> (<date>)
 
    ## Sessions
-   ### <date> – <n> topics, <x> ✅ / <y> 🟡 / <z> ❌
+   ### <date> – <n> topics, <x> richtig / <y> teilweise / <z> falsch
    - <topic>: <short note>
    ```
    Move weak spots that sat this time from "open" to "sits".

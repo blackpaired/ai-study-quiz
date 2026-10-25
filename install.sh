@@ -13,11 +13,11 @@ rm -rf "$skills/study-quiz"
 cp -r "$here/skills/study-quiz" "$skills/"
 chmod +x "$skills/study-quiz/to_md.sh"
 
-echo "✔ Skill installed:  $skills/study-quiz/"
+echo "Skill installed:  $skills/study-quiz/"
 echo
 echo "Required programs:"
 missing=0
-check() { if command -v "$1" >/dev/null 2>&1; then echo "  ✔ $1"; else echo "  ✘ $1 missing  ($2)"; missing=1; fi; }
+check() { if command -v "$1" >/dev/null 2>&1; then echo "  ok       $1"; else echo "  MISSING  $1  ($2)"; missing=1; fi; }
 check markitdown  "pip install 'markitdown[all]'  or  pipx install 'markitdown[all]'"
 check pdftotext   "poppler: sudo pacman -S poppler / sudo apt install poppler-utils / brew install poppler"
 check pdftoppm    "poppler (see above)"

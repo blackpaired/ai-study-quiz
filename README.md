@@ -5,7 +5,7 @@ A skill for **terminal AI agents** (AI coding agents / agentic CLIs such as Clau
 ## What you get
 
 - **One question at a time**, answered freely in your own words. No multiple choice.
-- **Honest grading** against your materials: ✅ / 🟡 / ❌, what was right, what was missing, with the location in your notes.
+- **Honest grading** against your materials: correct / partly / wrong, what was right, what was missing, with the location in your notes.
 - **Detailed follow-up questions**: "why?", "what happens if …?", differences, step-by-step processes, cases, "spot the mistake", "explain it to a patient".
 - **Discussion** when you don't know something: a short explanation with the *why*, then a check question to make sure it sits.
 - **Hint ladder** instead of instant answers: small hint → bigger hint → answer.

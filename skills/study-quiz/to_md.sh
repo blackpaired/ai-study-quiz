@@ -25,7 +25,7 @@ for p in "$@"; do
   elif [ -f "$p" ]; then
     files+=("$p")
   else
-    echo "✘ not found: $p" >&2
+    echo "not found: $p" >&2
   fi
 done
 
@@ -35,13 +35,13 @@ for f in "${files[@]}"; do
   if [ -f "$out" ] && [ -s "$out" ]; then
     echo "• exists:     $out"
   elif markitdown "$f" -o "$out" 2>/dev/null && { [ -s "$out" ] || [[ "${f,,}" == *.pdf ]]; }; then
-    echo "✔ converted:  $out"
+    echo "converted:  $out"
   elif command -v pandoc >/dev/null 2>&1 && [[ "${f,,}" =~ \.(docx|odt|html|epub|rtf)$ ]] \
        && pandoc "$f" -t gfm --wrap=none -o "$out" 2>/dev/null; then
-    echo "✔ converted (pandoc): $out"
+    echo "converted (pandoc): $out"
   else
     rm -f "$out"
-    echo "✘ failed:     $f   (maybe missing: pipx install --force 'markitdown[all]')"
+    echo "FAILED:     $f   (maybe missing: pipx install --force 'markitdown[all]')"
     continue
   fi
   # PDFs with less than ~200 characters per page -> probably a scan
